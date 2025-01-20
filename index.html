@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/landingPage.css" />
     <title>MyReads</title>
 </head>
 <header>
     <h1>MyReads</h1>
     <nav>
         <ul>
-            <li>MyLibary</li>
-            <li>MyLinks</li>
+            <li><a href="./index.html">MyHome</a></li>
+            <li><a href="./myLibrary.html">MyLibary</a> </li>
+            <li><a href="./myLibrary.html">MyLinks</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <main>
         <div class="container1">
-            <div id="title"><label for="title">Title:</label>
-                <input type="text" id="title"/></div>
-            <div id="author"><label for="author">Author:</label>
-                <input type="text" id="author"/></div>
-            <div id="genre"><label for="genre">Genre:</label>
-                <input type="text" id="genre"/></div>
-            <div id="date-completed"><label for="date-completed">Date Completed:</label>
-                <input type="text" id="date-completed"/></div>
-            <div id="ig"><label for="ig">IG:</label>
-                <input type="checkbox" id="ig" name="ig" value="ig"/></div>
-            <div id="yt"><label for="yt">Youtube:</label>
-                <input type="checkbox" id="yt" name="yt" value="yt"/></div>
+            <input type="text" id="title" placeholder="Title"/></div>            
+            <input type="text" id="author" placeholder="Author"/></div>            
+            <input type="text" id="genre" placeholder="Genre"/></div>            
+            <input type="text" id="date-completed" placeholder="Date Completed"/></div>            
+            <input type="checkbox" id="ig" name="ig" value="ig"/></div>            
+            <input type="checkbox" id="yt" name="yt" value="yt"/></div>
          <!--add images to social media when files are uploaded--> 
             <div id="twitter"><label for="twitter">X:</label>
                 <input type="checkbox" id="twitter" name="twitter" value="twitter"/></div> 
@@ -42,16 +38,13 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-            <div id="review"><label for="review">Review:</label>
-            <textarea type="text" id="review"></textarea></div>
-
-        <div class="summary" id="review"><label for="summary">Summary</label>
-            <textarea type="text" id="sumarry"></textarea></div>
+            <textarea type="text" id="review" placeholder="Review"></textarea></div>
+            <textarea type="text" id="sumarry" placeholder="Summary"></textarea></div>
             <input type="submit" value="Submit"/>
                 
        
 
     </main>
-    
+    <script src="./assets/js/landingPage.js"></script>  
 </body>
 </html>
