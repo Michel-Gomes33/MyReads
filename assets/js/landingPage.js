@@ -22,22 +22,36 @@ document.addEventListener("DOMContentLoaded", () => {
       const rating = starRating ? starRating.value : null; // Handle cases where no star is selected
 
       // Get checked social media checkboxes
-      const socialMedia = [];
-      const checkboxes = document.querySelectorAll("input[type='checkbox']:checked");
-      checkboxes.forEach((checkbox) => socialMedia.push(checkbox.value));
+
+     const errorMessage = document.getElementById('error-message');
+
+      // Validate required fields
+      if (!title || !author || !genre || !date || !review || !summary) {
+      // Show error message
+          errorMessage.textContent ='Oops! Looks like you missed a spot. Fill out all required fields to keep things moving!';
+          errorMessage.style.color = 'red';
+          return;
+      }
 
       // Create an object to store the collected data
-
       const formData = {
-          title,
-          author,
-          genre,
-          date,
-          review,
-          summary,
-          rating,
-          socialMedia
+          title: title,
+          author: author,
+          genre: genre,
+          date: date,
+          review: review,
+          summary: summary,
+          rating: rating,
       };
+
+      // Store the form data in local storage
+      let formDatas = JSON.parse(localStorage.getItem('formDatas')) || [];
+      formDatas.push(formData);
+      localStorage.setItem('formDatas', JSON.stringify(formDatas));
+
+      // Clear input fields after submission
+      document.querySelector("form").reset();
+      errorMessage.textContent = ''; // Clear error message
   });
 });
 

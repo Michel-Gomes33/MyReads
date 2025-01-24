@@ -23,7 +23,7 @@
     </nav>
 
     <!-- Form -->
-
+<form>
     <div class="container shadow-lg p-3 bg-white rounded mt-5 mx-auto row g-4" id="input-container">
        
         <!-- Title, Author, Genre, Platform, Date Completed -->
@@ -81,10 +81,13 @@
             <textarea class="form-control" id="summary" rows="2" placeholder="Write a brief summary"></textarea>
         </div>
 
+        <!--Error Message-->
+        <p id="error-message" class="error-message"></p>
+
         <!-- Submit Button -->
 
         <div class="text-center">
-            <input class="btn btn-success" type="submit" value="Submit">
+            <button type="submit" class="btn btn-success">Submit</button>
         </div>           
         </form>
     </div>
