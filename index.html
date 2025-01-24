@@ -9,60 +9,80 @@
     <script src="./assets/js/landingPage.js"></script>  
 </head>
 <body class="bg-light text-dark">
-
     <h1 class="text-center mb-4">MyReads</h1>
     <nav>
         <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link home" aria-current="page" href="./index.html">MyHome</a></li>
-            <li class="nav-item"><a class="nav-link libary" href="./myLibrary.html">MyLibary</a> </li>
+            <li class="nav-item"><a class="nav-link libary" href="./myLibrary.html">MyLibrary</a></li>
             <li class="nav-item"><a class="nav-link links" href="./myLibrary.html">MyLinks</a></li>
         </ul>
     </nav>
-    
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label"></label>
-            <input for="formGroupExampleInput" class="form-label"placeholder="Title:"/>
-        </div>   
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label"></label>         
-            <input type="text" id="author" placeholder="Author:"/>
-        </div>
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label"></label>            
-            <input type="text" id="genre" placeholder="Genre:"/>
-        </div>
-        <div class="mb-3"> 
-            <label for="formGroupExampleInput" class="form-label"></label>           
-            <input type="text" id="date-completed" placeholder="Date Completed:"/>
-        </div> 
-        <div class="mb-3">           
-            <input type="checkbox" id="ig" name="ig" value="ig"/>            
-            <input type="checkbox" id="yt" name="yt" value="yt"/>
-         <!--add images to social media when files are uploaded--> 
-            <div id="twitter"><label for="twitter">X:</label>
-                <input type="checkbox" id="twitter" name="twitter" value="twitter"/> 
-            <div id="tt"><label for="tt">TikTok:</label>
-                <input type="checkbox" id="tt" name="tt" value="tt"/>
-            </div>
-        </div>
-        <div class="container text-center" >
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-        </div>
-            
-            <div class="container text-center">
-            <textarea class="col-6"type="text" id="review" placeholder="Review:"></textarea>
-            </div>
-            
-            <textarea type="text" id="sumarry" placeholder="Summary"></textarea></div>
-            <input class="container text-center" class="btn btn-success" type="submit" value="Submit"/>
-                
-       
 
-   
+    <div class="container mt-4">
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="formGroupExampleInput" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title:">
+                </div>
+                <div class="col-md-6">
+                    <label for="author" class="form-label"></label>
+                    <input type="text" class="form-control" id="author" placeholder="Author:">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="genre" class="form-label"></label>
+                    <input type="text" class="form-control" id="genre" placeholder="Genre:">
+                </div>
+                <div class="col-md-6">
+                    <label for="date-completed" class="form-label"></label>
+                    <input type="text" class="form-control" id="date-completed" placeholder="Date Completed:">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>Platform Posted:</label>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-success">IG</button>
+                    <button class="btn btn-success">FB</button>
+                    <button class="btn btn-success">TW</button>
+                    <button class="btn btn-success">YT</button>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="rating" class="form-label">Star Rating:</label>
+                <div>
+                    <input type="radio" id="1" name="rating" value="1">
+                    <label for="star1">★</label>
+                    <input type="radio" id="2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="5" name="rating" value="5">
+                    <label for="star5">★</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="review" class="form-label">Review:</label>
+                <textarea class="form-control" id="review" rows="3" placeholder="Review:"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="summary" class="form-label">Summary:</label>
+                <textarea class="form-control" id="sumarry" rows="2" placeholder="Summary"></textarea>
+            </div>
+
+            <div class="text-center">
+                <input class="btn btn-success" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
+

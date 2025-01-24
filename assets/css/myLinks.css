@@ -1,0 +1,24 @@
+.link-card {
+    border:29x solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px 0 rgba(196, 85, 206, 0.2);
+    transition: 0.3s;
+}
+.link-card a {
+    font-size: 24px;
+    color: #007bff;
+    text-decoration: none
+}
+.link-card:hover{
+    background-color: plum;
+}
+header {
+    background-color: white;
+    color: white;
+    text-align: right;
+    padding: 2px;
+}
