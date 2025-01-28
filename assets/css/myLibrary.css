@@ -1,29 +1,37 @@
-.form-select {
-    background-color: 50%;
-}
-
 main {
     margin: 2rem;
     display: flex;
     flex-direction: row;
     gap:2rem;
 }
-
-/* Create a Cards Container */
-
-/* .card style */
-
-/* .card img */
-
-/* .card h2 */
-
-/* .card p */
-
-/* media query */
-
-/* Blurred background */
-
-/* expanded card */
+.body{
+    background-color: black;
+}
+.text-center{
+    color:#0d6efd;
+    font-size: 5em;
+    font-family:fantasy;
+}
+.form-select {
+    background-color: 50%;
+}
+.nav-item{
+    font-family:fantasy; 
+    font-size: 1.5em; 
+}
+#filterMenu{
+    font-family:fantasy; 
+}
+h2{
+    font-family:fantasy; 
+    font-size: 2em;
+    color:#0d6efd;
+    margin:auto;
+}
+main{
+    font-size: 2em;
+    color:#0d6efd;  
+}
 
 .card {
     position: relative;
@@ -60,14 +68,20 @@ main {
 
 .card-rating {
     font-size: 16px;
-    color: #ff9900;
+    color: #0d6efd;
 }
 
 .card-summary {
     font-size: 14px;
     margin-top: 8px;
 }
-
-@media screen and (min-width: 768px) {
-    grid-template-columns: ;
-}
+.footer-text{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding: 1.5em;
+    color: #ffffff;
+    font-size:1.25em;
+    font-family: fantasy;
+    }
