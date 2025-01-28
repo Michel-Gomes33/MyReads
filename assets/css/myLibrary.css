@@ -1,0 +1,73 @@
+.form-select {
+    background-color: 50%;
+}
+
+main {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+
+/* Create a Cards Container */
+
+/* .card style */
+
+/* .card img */
+
+/* .card h2 */
+
+/* .card p */
+
+/* media query */
+
+/* Blurred background */
+
+/* expanded card */
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-rating {
+    font-size: 16px;
+    color: #ff9900;
+}
+
+.card-summary {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    grid-template-columns: ;
+}
