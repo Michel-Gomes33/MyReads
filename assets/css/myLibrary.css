@@ -1,0 +1,87 @@
+main {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+.body{
+    background-color: black;
+}
+.text-center{
+    color:#0d6efd;
+    font-size: 5em;
+    font-family:fantasy;
+}
+.form-select {
+    background-color: 50%;
+}
+.nav-item{
+    font-family:fantasy; 
+    font-size: 1.5em; 
+}
+#filterMenu{
+    font-family:fantasy; 
+}
+h2{
+    font-family:fantasy; 
+    font-size: 2em;
+    color:#0d6efd;
+    margin:auto;
+}
+main{
+    font-size: 2em;
+    color:#0d6efd;  
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-rating {
+    font-size: 16px;
+    color: #0d6efd;
+}
+
+.card-summary {
+    font-size: 14px;
+    margin-top: 8px;
+}
+.footer-text{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding: 1.5em;
+    color: #ffffff;
+    font-size:1.25em;
+    font-family: fantasy;
+    }

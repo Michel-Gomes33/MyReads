@@ -1,0 +1,139 @@
+body {
+  background-color: black;
+  color: #0d6efd;
+  font-family:fantasy;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 20px;
+}
+h1 {
+  color: #0d6efd; 
+  font-size: 5em;
+}
+nav ul li{
+  font-size: 1.5em;
+}
+nav ul li a{
+  color:#0d6efd;
+  
+}
+input[type="text"],input[type=date]{
+  padding:10px;
+  border:5px, solid, black;
+  border-radius: 5px;
+  width:100%;
+  margin:0;
+  font-size: 1.5em;
+}
+
+::placeholder{
+  color:black;
+}
+.form-label{
+  background-color:#0d6efd;
+  font-family: fantasy;
+  color:black;
+  
+}
+#title{
+  background-color:#0d6efd;
+  font-family: fantasy;
+  color:black; 
+  font-size: 1.5em;
+}
+#author{
+  background-color:#0d6efd;
+  font-family: fantasy;
+  color:black;
+  font-size: 1.5em;
+}
+#genre{
+  background-color:#0d6efd;
+  font-family: fantasy;
+  color:black;
+  font-size: 1.5em;
+}
+
+.textbox-n{
+  background-color:#0d6efd;
+  font-family: fantasy;
+  color:black;
+}
+.form-control{
+  background-color:#0d6efd;
+  font-family: fantacy;
+  color:black;
+  font-size: 1em;
+}
+.form-label{
+  font-size: 1.5em;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+.star-rating label {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.star-rating input:checked ~ label {
+  color: black;
+}
+.star-rating input:hover ~ label {
+  color: black;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.rating > input{ display:none;}
+
+.rating > label {
+  position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: black;
+    cursor: pointer;
+    font-size: 2rem; 
+  margin-right: 5px; 
+}
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+
+h1{
+    margin-top:75px;
+}
+p{ font-size: 1.2rem;}
+@media only screen and (max-width: 600px) {
+  h1{font-size: 14px;}
+  p{font-size: 12px;}
+}
+
+.checked {
+    color: black;
+  }
+
+  footer{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 1.5em;
+  color: #ffffff;
+  font-size:1.25em;
+  font-family: fantasy;
+  }
