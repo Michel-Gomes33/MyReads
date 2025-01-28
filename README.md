@@ -1,64 +1,32 @@
 01 Project: MyReads
+# MyReads
 
-Title
-MyReads
+## Description
 
-Project Description:
-A website to review and keep track of the books the influencer reads to have an organized system of books and reviews for posts.
+MyReads is a streamlined website designed to help influencers track, organize, and review the books they read. It offers an efficient way to rate books, write reviews, and prepare summaries tailored for social media posts. 
 
-User Story:
-As an influencer
-I want to leave reviews and track the books i've read and recommend.
-So i can review and share books to followers in an organized way
+### Motivation:
+The idea behind MyReads was to eliminate the chaos of disorganized notes and scattered thoughts, providing influencers with a clean and organized system for documenting their reading journey.
 
-Acceptance Criteria
+### Purpose:
+This project solves the problem of managing book reviews and sharing engaging, polished content on social media platforms. With MyReads, influencers can focus on their creativity and audience connection instead of administrative tasks.
 
-GIVEN a book tracking website
-It is done when user can upload book reviews.
+### Learnings:
+During the development of *MyReads*, the team honed their skills in web development, learned to balance user-centric design with technical functionality, and explored efficient ways to organize and display data.
 
-WHEN I click a tab
-THEN it takes me to another page.
+## License
+This project is licensed under the MIT License. 
 
-------//Home page//------
+## Installation
+Link to myreads website. 
+## Features
+Dynamic Interface
+![](./assets/images/IndexHtml.jpg)
+![](./assets/images/MyLibrary.jpg)
 
-WHEN open my landing page
-THEN I see a nav bar and book entry prompt.
-
-WHEN I click 'MyReads'
-THEN I go to the home page.
-
-WHEN I add an entry
-THEN I can submit it.
-
-WHEN I choose a star rating
-THEN the number of stars are highlighted.
-
-WHEN I submit an entry
-THEN it is stored in a global storage.
-
-
-WHEN I enter the book information
-THEN it saves it to my library.
-
-
-------//My Library//------
-
-WHEN I click on 'My library' tab
-THEN I am directed to a new web page.
-
-WHEN I filter my library
-THEN I can sort through different tags (alphabetical, ratings, genre).
-
-WHEN I hover "filter"
-THEN I am presented a drop down menu.
-
-WHEN I click on a book
-THEN it takes me to its review.
-
-------//My Links//------
-
-WHEN I click on the plaftorm link
-THEN it will redirect me to the corresponding website
-
-
+## Credits 
+Robert Strickland: https://github.com/GoldenBobbyG
+Dakota Wolfe: https://github.com/dakotawolfee
+Michel Gomes: https://github.com/Michel-Gomes33
+Bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 

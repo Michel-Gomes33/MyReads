@@ -1,9 +1,9 @@
 // Variable to select form elements
-const form = document.getElementById('inputContainer');
+const submitButton = document.getElementById('submitButton');
 
-form.addEventListener('submit', function (event) {
+submitButton.addEventListener('click', function (event) {
     event.preventDefault(); // Prevent page reload
-
+    console.log('submit starts')
     // Input Values
 
     const title = document.getElementById('title').value;
@@ -14,6 +14,7 @@ form.addEventListener('submit', function (event) {
     const summary = document.getElementById('summary').value;
 
     // Error message
+    console.log('value is ',title)
 
     const errorMessage = document.getElementById('error-message');
 
@@ -39,6 +40,9 @@ form.addEventListener('submit', function (event) {
         summary: summary,
         starRating: rating 
     };
+
+    console.log('bookreview data log',bookReview)
+    // localStorage.setItem('bookReview',JSON.stringify(bookReview))
     storeLocalStorage(bookReview)
     redirectPage("myLibrary.html")
    }
