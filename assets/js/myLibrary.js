@@ -1,4 +1,28 @@
-let bookReview= readLocalStorage()
+let bookReview= readLocalStorage();
+
+// cardContainer const
+
+//Card creation function
+
+//Card eventlistener to expand
+
+// render card function
+
+// expanded card function
+
+//create expanded card content
+
+//close button
+
+//close function
+
+//card editing function
+
+//save changes
+
+//replace content
+
+//filter
     console.log(bookReview)
     let mainEl = document.querySelector('main')
 
@@ -30,4 +54,4 @@ function renderBlogList(){
         }
     }
 }
-console.log('hi')
+renderBlogList();
